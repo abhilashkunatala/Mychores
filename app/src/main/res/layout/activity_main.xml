@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3CCBFF3B"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView_Wishes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Good Morning"
+        android:textColor="#ADEE4410"
+        android:textSize="30sp" />
+
+
+    <Button
+        android:id="@+id/button_Newspaper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_centerVertical="true"
+
+
+
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="goto1"
+        android:text="The Hindu" />
+
+    <Button
+        android:id="@+id/button_Cf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/button_Newspaper"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="goto2"
+        android:text="Around Us " />
+
+    <Button
+        android:id="@+id/button_android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_alignParentRight="true"
+        android:clickable="true"
+        android:linksClickable="true"
+        android:onClick="goto3"
+
+        android:text="Android"
+        android:layout_centerVertical="true"/>
+
+
+    <TextView
+        android:text="Just Focus tv.setSelected(true);v tv.setSelected(true);vvtv.setSelected(true);tv.setSelected(true);tv.setSelected(true);tv.setSelected(true);tv.setSelected(true);"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit ="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:scrollHorizontally="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/button_Newspaper"
+        android:id="@+id/textView_Scroll"/>
+
+
+
+</RelativeLayout>
